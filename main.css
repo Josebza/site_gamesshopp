@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* box-sizing border-box faz com que o navegador não calcule a dimensão de um elemento*/
+/* Padding distancia entre o conteudo de um elemento  e suas bordas */
+/* margin define uma margem */
+
+header {
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+/* Modo de navegação direta na tag chamando a tag header para estilizar no css */
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+}
+/* header secitons h2 e h3 colocando a uma font 'bungee' e tirando o bold padrao do navegador colocando o font-weight normal */
+/* Adicionado no button tbm para fazer a font */
+body, input, textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* Modo de navegação direta  chamando header nav li*/
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+/* Enfase e importancia se for estilizar uma TAG <A> tem que chamar ela diretamento não so uma tag anterior */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Max-width e a  largura da area de exibição, eu estou dando 1200px como maximo dela */
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Display flex para se tornar um container e depois conseguimos manipular */
+
+.brands-list img {
+    height: 24px;
+    text-decoration: none;
+}
+
+/* brands-list = listas de marcas, Foi criado uma class pq ja existe uma 'ul' com 'li' para nao ter conflito foi criado uma class */
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Display inline para colocar os elementos um ao lado do outro para ficar com forma em linha  */
+
+section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+/* Na section acima foi feito uma gambiarra para colocar h2 junto ao texto ao lado da imagem central do hero */
+
+section h2 {
+    margin-bottom: 16px;
+    color: #182c61;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin: 0 22px ;
+}
+/* margin editada para melhor visualização colocando 0 para as alturas e 22 para as laterias  */
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+/* Display block aplicado por causa da tag container aplicada em 2 tipos de section   */
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    margin: 10px;
+
+}
+/* Pegando a tag form e puxando suas sub class para aplicar o mesmo codigo simples  */
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button  {
+    background-color: #182c61;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* Estilizando o button com a cor de fundo mudando a cor da escrita e tirando a borda ja estilizada no padrao com none*/
+/* Aplicando uma estilizacao no ponteiro do mouse para melhor indentificacao de butao interativo que e o cursor pointer  */
+
+form button:hover {
+    background-color: #314e9e;
+
+}
+
+/* Hover e para quando passar o mouse ter outra cor outra indentificacao */
+
+input:focus textarea:focus {
+    outline-color: #182c61;
+
+}
+
+/* Editando o Foco isso se da apartir do momento que o cliente interagir com os campos q possibilita que escreva algo  */
+
+footer {
+    background-color: #182c61;
+    color: #ffff;
+    padding: 16px 0;
+}
